@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS Livros - Carrinho</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MDS Livros</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrinho.html" class="active">Carrinho</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CARRINHO -->
+    <section class="carrinho">
+        <h1>Seu Carrinho</h1>
+        <div id="itens-carrinho">
+            <!-- Itens renderizados dinamicamente -->
+        </div>
+        <div class="total">
+            <h3>Total: R$<span id="total-preco">0.00</span></h3>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 MDS Livros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

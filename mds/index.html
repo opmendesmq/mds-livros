@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS Livros - Início</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MDS Livros</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Descubra o Poder dos Livros</h1>
+        <p>A maior livraria da América do Sul espera por você.</p>
+        <button onclick="scrollToSection('destaques')">Explorar</button>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section id="destaques" class="destaques">
+        <h2>Destaques do Mês</h2>
+        <div class="grid">
+            <div class="livro">
+                <img src="assets/livro1.jpg" alt="Livro 1">
+                <h3>Livro 1</h3>
+                <p>Autor: Fulano</p>
+            </div>
+            <div class="livro">
+                <img src="assets/livro2.jpg" alt="Livro 2">
+                <h3>Livro 2</h3>
+                <p>Autor: Ciclano</p>
+            </div>
+            <div class="livro">
+                <img src="assets/livro3.jpg" alt="Livro 3">
+                <h3>Livro 3</h3>
+                <p>Autor: Beltrano</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 MDS Livros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

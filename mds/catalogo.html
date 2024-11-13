@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS Livros - Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MDS Livros</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo">
+        <h1>Catálogo de Livros</h1>
+        <div class="filtros">
+            <input type="text" id="busca" placeholder="Buscar por título ou autor" oninput="filtrarLivros()">
+            <select id="categoria" onchange="filtrarLivros()">
+                <option value="tudo">Todas as Categorias</option>
+                <option value="ficcao">Ficção</option>
+                <option value="negocios">Negócios</option>
+                <option value="tecnologia">Tecnologia</option>
+            </select>
+        </div>
+        <div class="grid" id="livros-grid">
+            <!-- Livros renderizados dinamicamente -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 MDS Livros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
